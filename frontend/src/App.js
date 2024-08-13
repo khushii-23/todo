@@ -1,25 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import {useState} from 'react'
+import Home from './components/Home';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+
+//   const [title,setTitle] = useState("")
+//   const [desc,setDesc] = useState("")
+
+// function handleChange(event){
+// if(event.target.name === "title"){
+//   setTitle(event.target.value)
+// }
+//   else if(event.target.name === "Description"){
+//     setDesc(event.target.value)
+//   }
+// }
+
+// function handleClick(){
+//   console.log(title)
+//   console.log(desc)
+//   setTitle("")
+//   setDesc("")
+//}
+
+    return (
+    <div>
+      <Home/>
+      
+      {/* <Input label="title" Change={handleChange} value={title}></Input>
+      <Input label="Description" Change={handleChange} value={desc}></Input>
+      <button onClick={handleClick}>Button</button>       */}
     </div>
-  );
-}
+    ) 
+  }
 
 export default App;
